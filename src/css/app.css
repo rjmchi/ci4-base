@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    [type='text'],
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    textarea,
+    select {
+        @apply rounded-lg  border-neutral-300 shadow-sm w-full focus:border-primary-500 focus:ring-primary-500
+    }
+    [type='checkbox'],
+    [type='radio'] {
+        @apply ml-2 h-5 w-5 text-primary-700 focus:ring-primary-500 rounded
+    }
+}
+
+.btn {
+    @apply rounded-lg py-2 px-3 text-lg font-bold cursor-pointer tracking-wider border
+}
+.btn-primary {
+    @apply bg-primary-500 hover:bg-primary-700 text-primary-900 border-primary-300
+}
+.btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-700 text-white border-secondary-300
+}
+.btn-danger {
+    @apply bg-danger-500 hover:bg-danger-700 text-white border-danger-300
+}
+
+.alert {
+    @apply h-10 w-full p-2 border my-1 rounded-md
+}
+
+.alert-danger {
+    @apply bg-danger-200 text-danger-700 border-danger-600
+}
+.alert-success {
+    @apply bg-success-200 text-success-600 border-success-700
+}
+.alert-warning {
+    @apply bg-warning-200 text-warning-800 border-warning-700
+}
